@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- This web is created by Mateusz Urbanek, every comercial use hould be discused with him. Message m.urb@buisness.com for details-->
+    <meta charset="utf-8" />
+    <title>My first web</title>
+
+    <style>
+        .background_grey{
+            background-color: grey;
+        }
+        .background_image{
+            background-image:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redditmedia.com%2Fcmg5-BNarMGk3DaamTIx1QR97_8-Ee5Qt4uHxY-G4i0.png%3Fw%3D1024%26s%3D55786d4df46a4578778284fc8e1ee5c9&f=1&nofb=1";
+        }
+        .small_width_230{
+            width: 230px;
+        }
+        .larger_image {
+            width: 700px;
+            height: auto;
+        }
+
+        .darkred_colour {
+            color: darkred;
+        }
+
+        .hotpink_colour {
+            color: hotpink
+        }
+        .black_colour{
+            color: black;
+        }
+        h1{
+            font-family: Lobster,monospace;
+        }
+        li{
+            font-family: Lobster,monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="background_grey">Welcome traveler!</h1>
+    <p><a href="https://lotr.fandom.com/pl/wiki/Kategoria:Postacie">Click here</a> to view Sauron's armies.
+    <br />You can also<a href="https://lotr.fandom.com/wiki/Middle-earth"> click here</a> to learn about history of the Middle Earth!</p><br />
+    <p>Clicking on the image will take you directly to the form about beauty of our sweet dark lord<strong> (in maintenance due to short website!)</strong></p>
+    <a href="#list_start"><img class="larger_image" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.gamer-network.net%2F2017%2Fusgamer%2Fshadow-of-war-sauron.jpg&f=1&nofb=1" alt="Beautiful Sauron standing in the flames of Mordor" /></a>
+
+    <!-- Formularz -->
+    <div>
+        <div>
+            <p id="list_start" class=" = hotpink_colour"><strong>Things Sauron loves</strong> :</p>
+            <ul class="black_colour">
+                <li>Destroying humanity</li>
+                <li>Ruling over weak creatures</li>
+                <li>Getting gangbanged <u>by his own ring</u> all the time</li>
+            </ul>
+        </div>
+        <p class=" = darkred_colour"><strong>Top 3 things Sauron hates</strong> :</p>
+        <ol class="black_colour">
+            <li><em>Gimli</em></li>
+            <li>Most of the Middle Earth</li>
+            <li>Rohan after losing battle of Minas Tirith</li>
+        </ol>
+        <div>
+
+        </div>
+    </div>
+
+    <form action="/submit_sauron_list">
+        <label><input type="radio" name="Power" checked />In full power</label>
+        <label><input type="radio" name="Power" />Without ring</label><br />
+        <label><input type="checkbox" name="personality" checked> Scary</label>
+        <label><input type="checkbox" name="personality"> Powerful</label>
+        <label><input type="checkbox" name="personality"> Smarter than elves</label><br>
+
+        <input class="small_width_230" type="text" placeholder="What else great traits Sauron has?" required/>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
